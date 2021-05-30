@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <h1>sistem crud javaScript</h1>
+        <input class="form-tambah" type="text" name="jurusan" placeholder="imput njir....">
+        <button class="btn-tambah" onclick="tambah()" type="button" >tambah</button>
+        <table id="tabel">
+               
+        </table>
+    </div>
+<a href="#" onclick="alert('anjing')">klik aku</a>
+
+<p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error hic architecto, delectus, quam quos accusantium veniam corporis officia itaque voluptas est. Nisi minima minus ratione fuga voluptate laborum rerum commodi?</p>
+<p class="paragraf">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nemo laborum odit quam eius eos exercitationem alias pariatur debitis porro fugit itaque, perspiciatis explicabo voluptatibus quibusdam facere veniam enim! Reprehenderit?
+</p>
+<p class="paragraf">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi maxime magni possimus dolor sit enim numquam, necessitatibus quam sunt esse culpa illum ipsa? Repellendus delectus numquam amet corrupti quas ut?
+</p>
+
+    <script src="script.js"></script>
+    <script>
+     
+//looping for array
+
+    //  var bahasa = ["jawa","sunda","manado","ngapak","padang"];
+    //  for(i = 0; i <= bahasa.length; i++ ){
+    //      document.write(i + " " + bahasa[i] + "<br>");
+    //  }
+
+    //  var hewan = ["katak", "ular", "musang", "lalat", "panda"];
+    //  hewan.forEach((individu) => {
+    //      document.write(individu + "<br>");
+    //  });
+
+// DOM selection
+
+var paragraf = document.getElementsByClassName("paragraf");
+
+  console.log(paragraf);
+
+        setInterval(function(){
+            paragraf[0].style.color = "red";
+            paragraf[1].style.color = "green";
+            paragraf[2].style.color = "blue";
+
+            setTimeout(function(){
+                paragraf[0].style.color = "black";
+                paragraf[1].style.color = "black";
+                paragraf[2].style.color = "black";
+            }, 500)
+        }, 1000);
+
+
+//membuat elemen h1
+var judul = document.createElement("h1");
+//mengisi konten
+judul.textContent = "kamu dan aku";
+//menampilkan elemennya di body
+document.body.append(judul);
+
+
+
+
+
+   
+    </script>
+</body>
+</html>
